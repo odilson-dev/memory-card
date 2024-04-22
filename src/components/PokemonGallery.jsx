@@ -1,4 +1,8 @@
+import { useState } from "react";
 import Card from "./Card";
+const shuffle = (array) => {
+  return array.sort(() => Math.random() - 0.5);
+};
 function PokemonGallery() {
   const pokemonNames = [
     "bulbasaur",
@@ -23,11 +27,23 @@ function PokemonGallery() {
     "raticate",
   ];
 
-  // Render the gallery of Pokémon sprites
+  const [pokemonNameList, setPokemonNameList] = useState([...pokemonNames]);
+  function handleClick() {
+    // Shuffling the listOfCards
+    console.log("Clicked");
+    const shuffledList = shuffle([...pokemonNames]);
+    // Updating state with the shuffled list
+    setPokemonNameList(shuffledList);
+  }
+
   return (
     <div className="pokemonGallery">
-      {pokemonNames.map((pokemonName) => (
-        <Card key={pokemonName} pokemonName={pokemonName} />
+      {pokemonNameList.map((pokemonName) => (
+        <Card
+          key={pokemonName}
+          pokemonName={pokemonName}
+          onClick={handleClick}
+        />
       ))}
     </div>
   );

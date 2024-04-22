@@ -1,8 +1,8 @@
 import PokemonImage from "./PokemonImage";
 
-function Card({ pokemonName }) {
+function Card({ pokemonName, onClick }) {
   return (
-    <div className="card">
+    <div className="card" onClick={onClick}>
       <PokemonImage pokemonName={pokemonName} />
       <p>{pokemonName}</p>
     </div>
