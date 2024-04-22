@@ -15,6 +15,10 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+h1,
+a {
+  color: #272727;
+}
 p {
   text-transform: capitalize;
 }

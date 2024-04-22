@@ -3,7 +3,16 @@ import PokemonGallery from "./components/PokemonGallery";
 const App = () => {
   return (
     <div>
-      <h1>Memory Card</h1>
+      <h1>
+        Memory Card{" "}
+        <a
+          href="https://github.com/odilsoncode/memory-card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className="bx bxl-github"></i>
+        </a>
+      </h1>
       <PokemonGallery />
     </div>
   );

@@ -52,7 +52,7 @@ function PokemonGallery() {
 
   return (
     <>
-      <p className="high-score">High Score: {highScore}</p>
+      <p className="high-score">Best Score: {highScore}</p>
       <p className="score">Score: {score}</p>
       <div className="pokemonGallery">
         {pokemonNameList.map((pokemonName) => (
