@@ -1,12 +1,10 @@
 import "./App.css";
-
-import PokemonImage from "./components/PokemonImage";
-
+import PokemonGallery from "./components/PokemonGallery";
 const App = () => {
   return (
     <div>
-      <h1>Pokémon Sprite</h1>
-      <PokemonImage pokemonName="pikachu" />
+      <h1>Pokemon Gallery</h1>
+      <PokemonGallery startId={1} endId={20} />
     </div>
   );
 };
