@@ -2,9 +2,9 @@ import PokemonImage from "./PokemonImage";
 
 function Card({ pokemonName, onClick }) {
   return (
-    <div className="card" onClick={onClick}>
+    <div className="card" onClick={onClick} id={pokemonName}>
       <PokemonImage pokemonName={pokemonName} />
-      <p>{pokemonName}</p>
+      <p name={pokemonName}>{pokemonName}</p>
     </div>
   );
 }

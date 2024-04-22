@@ -3,8 +3,8 @@ import PokemonGallery from "./components/PokemonGallery";
 const App = () => {
   return (
     <div>
-      <h1>Pokemon Gallery</h1>
-      <PokemonGallery startId={1} endId={20} />
+      <h1>Memory Card</h1>
+      <PokemonGallery />
     </div>
   );
 };

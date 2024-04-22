@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const PokemonImage = ({ pokemonName }) => {
   // State to hold the sprite URL
@@ -43,7 +43,7 @@ const PokemonImage = ({ pokemonName }) => {
   return (
     <div>
       {url ? (
-        <img src={url} alt={`${pokemonName} sprite`} />
+        <img src={url} alt={`${pokemonName} sprite`} name={pokemonName} />
       ) : (
         <p>Loading...</p>
       )}
