@@ -6,7 +6,7 @@ const App = () => {
       <h1>
         Memory Card{" "}
         <a
-          href="https://github.com/odilsoncode/memory-card"
+          href="https://github.com/odilson-dev/memory-card"
           target="_blank"
           rel="noopener noreferrer"
         >
